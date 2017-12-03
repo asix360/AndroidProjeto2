@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.info.ndexemple.UnidadeInfo">
+
+
+    <TextView
+        android:id="@+id/tvNomeInf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/tvEnderecoInf"
+        android:layout_gravity="center"
+        android:text="Unidade name"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tvEnderecoInf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvNomeInf"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="20dp"
+        android:text="Endereço"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="18sp" />
+
+    <RatingBar
+        android:id="@+id/ratingBarInf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tvEnderecoInf"
+        android:layout_below="@+id/tvEnderecoInf"
+        android:layout_marginTop="27dp" />
+
+    <Button
+        android:id="@+id/btnincludVotoInf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/ratingBarInf"
+        android:text="Avaliar" />
+
+</RelativeLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.info.ndexemple.NddrawActivity">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/content_nddraw"
+        android:layout_width="match_parent"
+        android:layout_height="566dp"
+        tools:layout_editor_absoluteY="61dp" />
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="101dp"
+        android:orientation="vertical"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:visibility="visible"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        <RelativeLayout
+            android:layout_width="394dp"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/bntVoto"
+                android:layout_width="98dp"
+                android:layout_height="37dp"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="center_vertical|left"
+                android:text="Avaliar"
+                app:layout_anchorGravity="top|left"
+                android:visibility="visible"/>
+
+            <Button
+                android:id="@+id/btnAdd"
+                android:visibility="visible"
+                android:layout_width="98dp"
+                android:layout_height="36dp"
+                android:layout_alignBottom="@+id/bntVoto"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="19dp"
+                android:onClick="openaddScreen"
+                android:text="Novo"
+                app:layout_anchorGravity="top|center_vertical" />
+        </RelativeLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>
